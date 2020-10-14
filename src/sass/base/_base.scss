@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 h1 {
@@ -11,12 +15,13 @@ h1 {
 }
 
 h2 {
-  font-size: 4.4rem;
+  @extend %font-main;
+  @include font(4.4rem, normal, normal, 130%);
   color: $color-text;
-  background-color: red;
 }
 
 h3 {
-  font-size: 3.5rem;
+  @extend %font-main;
+  @include font(3.5rem, normal, normal, 130%);
   color: $color-text;
 }
