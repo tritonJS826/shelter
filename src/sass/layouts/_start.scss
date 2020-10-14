@@ -1,0 +1,53 @@
+.start {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  // background: url("../src/assets/start-screen-background.jpg");
+  background-size: 100%;
+  padding: 8vh 6vw 0 6vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  &__heading {
+    color: $color-primary;
+  }
+  &__subtitle {
+    color: $color2;
+  }
+}
+
+.start-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 67px 0 0 0;
+}
+
+.start-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vw;
+  &__title {
+    color: $color2;
+    width: 75%;
+  }
+  &__text {
+    color: $color3;
+  }
+  &__button {
+    margin-bottom: 6vw;
+  }
+}
+
+.start-content__img {
+  background-image: url("../src/assets/start-screen.png");
+  background-size: 100%;
+  flex-basis: auto;
+  min-width: 51vw;
+  height: 53.3vw;
+  margin: auto 0 0 10px;
+}

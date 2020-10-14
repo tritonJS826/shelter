@@ -1,15 +1,25 @@
+@import "../../node_modules/normalize.scss/normalize.scss";
+
 @import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
 
 /*Base*/
 @import "base/base";
 @import "base/button";
+@import "base/layout-wrapper";
+@import "base/link";
+@import "base/text";
 
 /*Layouts*/
 @import "layouts/wrapper";
 @import "layouts/about";
 @import "layouts/footer";
-@import "layouts/header";
+@import "layouts/start";
 @import "layouts/help";
 @import "layouts/in-additional";
 @import "layouts/not-only";
 @import "layouts/our-friends";
+
+/*Components*/
+@import "components/navigation";
