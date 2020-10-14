@@ -1,0 +1,21 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "shelter html temlate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"test not found\"",
+    "style": "sass --watch src/sass/index.scss build/index.css"
+  },
+  "keywords": [
+    "shelter"
+  ],
+  "author": "Viktor Veretennikov",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  },
+  "devDependencies": {
+    "sass": "^1.27.0"
+  }
+}
