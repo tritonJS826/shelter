@@ -1,0 +1,20 @@
+.our-friends__slider {
+
+}
+
+.slider-card {
+  background: red;
+  width:200px;
+  height:300px;
+  &__image {
+    background: green;
+    width:200px;
+    height:300px;
+  }
+  &__name {
+
+  }
+  &__button {
+
+  }
+}

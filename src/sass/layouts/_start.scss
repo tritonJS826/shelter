@@ -2,7 +2,7 @@
   background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
   // background: url("../src/assets/start-screen-background.jpg");
   background-size: 100%;
-  padding: 8vh 6vw 0 6vw;
+  padding: 60px 6vw 0 6vw;
 }
 
 .header {
@@ -30,7 +30,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 30vw;
   &__title {
     color: $color2;
     width: 75%;

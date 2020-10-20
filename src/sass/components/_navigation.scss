@@ -9,6 +9,9 @@
   height: 100%;
   &__button {
     list-style: none;
+    &_underline {
+      border-bottom: solid 2px $color-primary;
+    }
   }
   &__link {
     color: $color3;

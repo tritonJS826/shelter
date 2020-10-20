@@ -1,0 +1,29 @@
+.about {
+  background-color: $color4;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6vw 9vw 0 9vw;
+}
+
+.about-image {
+  background: url("../src/assets/about-pets.png") no-repeat;
+  background-size: 100%;
+  min-width: 23.4375vw;
+  min-height: 31.875vw;
+}
+
+.about-content {
+  max-width: 33.59375vw;
+  margin-bottom: 100px;
+}
+.about-content__title {
+  margin-top: 13px;
+  margin-bottom: 17px;
+}
+.about-content__text {
+  margin-bottom: 17px;
+}
