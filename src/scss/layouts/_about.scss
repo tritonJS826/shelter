@@ -1,16 +1,16 @@
 .about {
-  background-color: $color4;
+  background-color: $color2;
 }
 
 .about-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 6vw 9vw 0 9vw;
+  padding: 6vw 9vw 1vw 9vw;
 }
 
 .about-image {
-  background: url("../src/assets/about-pets.png") no-repeat;
+  background: url("/assets/about-pets.png") no-repeat;
   background-size: 100%;
   min-width: 23.4375vw;
   min-height: 31.875vw;

@@ -1,0 +1,30 @@
+.in-additional {
+  background-color: $color3;
+}
+
+.in-additional-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 9vw 1vw 9vw;
+}
+
+.in-additional-image {
+  background: url("/assets/donation-dog.png") no-repeat;
+  background-position: center, center;
+  background-size: 100%;
+  min-width: 39.45vw;
+  min-height: 31.875vw;
+}
+
+.in-additional-content {
+  max-width: 33.59375vw;
+  margin-bottom: 100px;
+}
+.in-additional-content__title {
+  margin-top: 13px;
+  margin-bottom: 17px;
+}
+.in-additional-content__text {
+  margin-bottom: 17px;
+}

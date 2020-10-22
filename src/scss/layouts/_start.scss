@@ -1,6 +1,6 @@
 .start {
   background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
-  // background: url("../src/assets/start-screen-background.jpg");
+  // background: url("/assets/start-screen-background.jpg");
   background-size: 100%;
   padding: 60px 6vw 0 6vw;
 }
@@ -43,7 +43,7 @@
 }
 
 .start-content__img {
-  background-image: url("../src/assets/start-screen.png");
+  background-image: url("/assets/start-screen.png");
   background-size: 100%;
   flex-basis: auto;
   min-width: 51vw;

@@ -1,11 +1,13 @@
 .our-friends {
+  background-color: $color4;
 }
 .our-friends-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 90px;
+  padding-top: 80px;
+  padding-bottom: 165px;
 }
 .our-friends__title {
   text-align: center;

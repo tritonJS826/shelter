@@ -1,6 +1,6 @@
 @import "../../node_modules/normalize.scss/normalize.scss";
 
-@import "abstract/constants";
+@import "abstract/constants.scss";
 @import "abstract/mixins";
 @import "abstract/placeholders";
 
@@ -18,9 +18,8 @@
 @import "layouts/start";
 @import "layouts/help";
 @import "layouts/in-additional";
-@import "layouts/not-only";
 @import "layouts/our-friends";
 
 /*Components*/
 @import "components/navigation";
-@import "components/slider"
+@import "components/slider";

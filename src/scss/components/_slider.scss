@@ -1,20 +1,18 @@
 .our-friends__slider {
-
+  margin-top: 4vw;
 }
 
 .slider-card {
   background: red;
-  width:200px;
-  height:300px;
+  width: 200px;
+  height: 435px;
   &__image {
     background: green;
-    width:200px;
-    height:300px;
+    width: 200px;
+    height: 437px;
   }
   &__name {
-
   }
   &__button {
-
   }
 }

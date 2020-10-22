@@ -1,0 +1,57 @@
+.footer {
+  width: 1280px;
+  height: 350px;
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+}
+
+.footer-wrapper {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color2;
+}
+
+.footer-image {
+  background-position: center;
+  background: url("/assets/footer-puppy.png") no-repeat;
+  background-size: 100%;
+  min-width: 23.4375vw;
+  min-height: 31.875vw;
+}
+
+.about-us {
+  height: 234px;
+  width: 278px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 35px;
+
+  &__title {
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+  }
+
+  &__block {
+    display: flex;
+    color: $color-primary;
+  }
+
+  &__contact {
+    display: flex;
+    width: 250px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__feedback {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $color-primary;
+    font-size: 20px;
+    line-height: 1.15;
+
+  }
+}
