@@ -4,20 +4,27 @@
 
 .about-wrapper {
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: space-around;
   align-items: center;
   padding: 6vw 9vw 1vw 9vw;
 }
+@media (max-width: 710px) {
+  .about-wrapper {
+    padding: 15px 7px 7px 7px;
+  }
+}
 
 .about-image {
-  background: url("/assets/about-pets.png") no-repeat;
+  background: url('/assets/about-pets.png') no-repeat;
   background-size: 100%;
-  min-width: 23.4375vw;
-  min-height: 31.875vw;
+  min-width: 280px;
+  min-height: 400px;
 }
 
 .about-content {
-  max-width: 33.59375vw;
+  width: 33.59375vw;
+  min-width: 300px;
   margin-bottom: 100px;
 }
 .about-content__title {

@@ -55,84 +55,68 @@
     <section class="our-friends">
       <div class="layout-wrapper our-friends-wrapper">
         <h3 class="our-friends__title">Our friends who<br/> are looking for a house</h3>
+        <div class="pop-up-window__blackout pop-up-window__blackout_hidden" id="pop-up-window__blackout"></div>
         <div class="our-friends__slider" id="our-friends__slider">
           <div class="pop-up-window pop-up-window_hidden" id="slider__pop-up"></div>
           <div class="slider__arrow_left" id="slider__arrow_left">"left"</div>
-          <div class="slider__main" id="slider__main">
-            <div class="slider-card">
-              <img class="slider-card__image" alt="img"></img>
-              <p class="slider-card__name">asd</p>
-              <div class="slider-card__button"></div>
-            </div>
-            <div class="slider-card">
-              <img class="slider-card__image" alt="img"></img>
-              <p class="slider-card__name">asd</p>
-              <div class="slider-card__button"></div>
-            </div>
-            <div class="slider-card">
-              <img class="slider-card__image" alt="img"></img>
-              <p class="slider-card__name">asd</p>
-              <div class="slider-card__button"></div>
-            </div>
-
-          </div>
+          <div class="slider__main" id="slider__main"></div>
           <div class="slider__arrow_right" id="slider__arrow_right">"right"</div>
         </div>
         <button class="button our-friends__button">Get to know the rest</button>
       </div>
     </section>
 
-    <!-- <section class="help">
+    <section class="help">
       <div class="layout-wrapper help-wrapper">
-        <h3>How you can help</br> our shelter</h3>
+        <h3>How you can help<br/> our shelter</h3>
         <div class="help-content">
           <figure class="help-card">
-            <p><img src="./src/assets/pet-food.png" alt="" class=help-card__image></img></p>
-            <figcaption class=help-card__figcaption"">Pet food</figcaption>
+            <p><img src="/assets/pet-food.png" alt="" class="help-card__image"></p>
+            <figcaption class="help-card__figcaption">Pet food</figcaption>
           </figure>
 
           <figure class="help-card">
-            <p><img src="./src/assets/transportation.png" alt="" class=help-card__image></img></p>
-            <figcaption class=help-card__figcaption"">Transportation</figcaption>
+            <p><img src="/assets/transportation.png" alt="" class="help-card__image"></p>
+            <figcaption class="help-card__figcaption">Transportation</figcaption>
           </figure>
 
           <figure class="help-card">
-            <p><img src="./src/assets/toys.png" alt="" class=help-card__image></img></p>
-            <figcaption class=help-card__figcaption"">Toys</figcaption>
+            <p><img src="/assets/toys.png" alt="" class="help-card__image"></p>
+            <figcaption class="help-card__figcaption">Toys</figcaption>
           </figure>
 
           <figure class="help-card">
-            <p><img src="./src/assets/bowls-and-cups.png" alt="" class=help-card__image></img></p>
-            <figcaption class=help-card__figcaption"">Bowls and cups</figcaption>
+            <p><img src="/assets/bowls-and-cups.png" alt="" class="help-card__image"></p>
+            <figcaption class="help-card__figcaption">Bowls and cups</figcaption>
           </figure>
 
           <figure class="help-card">
-            <p><img src="./src/assets/shampoos.png" alt="" class=help-card__image></img></p>
-            <figcaption class=help-card__figcaption"">Shampoos</figcaption>
+            <p><img src="/assets/shampoos.png" alt="" class="help-card__image"></p>
+            <figcaption class="help-card__figcaption">Shampoos</figcaption>
           </figure>
 
           <figure class="help-card">
-            <p><img src="./src/assets/vitamins.png" alt="" class=help-card__image></img></p>
-            <figcaption class=help-card__figcaption"">Vitamins</figcaption>
+            <p><img src="/assets/vitamins.png" alt="" class="help-card__image"></p>
+            <figcaption class="help-card__figcaption">Vitamins</figcaption>
           </figure>
 
           <figure class="help-card">
-            <p><img src="./src/assets/medicines.png" alt="" class=help-card__image></img></p>
-            <figcaption class=help-card__figcaption"">Medicines</figcaption>
+            <p><img src="/assets/medicines.png" alt="" class="help-card__image"></p>
+            <figcaption class="help-card__figcaption">Medicines</figcaption>
           </figure>
 
           <figure class="help-card">
-            <p><img src="./src/assets/collars-or-leashes.png" alt="" class=help-card__image></img></p>
-            <figcaption class=help-card__figcaption"">Collars / leashes</figcaption>
+            <p><img src="/assets/collars-or-leashes.png" alt="" class="help-card__image"></p>
+            <figcaption class="help-card__figcaption">Collars / leashes</figcaption>
           </figure>
 
           <figure class="help-card">
-            <p><img src="./src/assets/sleeping-area.png" alt="" class=help-card__image></img></p>
-            <figcaption class=help-card__figcaption"">Sleeping areas</figcaption>
+            <p><img src="/assets/sleeping-area.png" alt="" class="help-card__image"></p>
+            <figcaption class="help-card__figcaption">Sleeping areas</figcaption>
           </figure>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <section class="in-additional">
       <div class="layout-wrapper in-additional-wrapper">
@@ -140,15 +124,15 @@
         <div class="in-additional-content">
           <h3 class="in-additional-content__title">You can also</br> make a donation</h3>
           <p class="text about-content__text">Name of the bank / Type of bank account</p>
-          <p class="text about-content__credit-card">8380 2880 8028 8791 7435</p>
+          <button class="button about-content__credit-card">8380 2880 8028 8791 7435</button>
           <p class="text about-content__text_secondary">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
 
-    </footer>
+    </footer> -->
 
 
 	<!-- <script src="index.js"./></script> -->

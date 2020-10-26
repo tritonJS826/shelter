@@ -9,9 +9,15 @@ const slider = {
   visibleSlides: [],
   rootId: '',
   popUpId: '',
+  closePopUpBtnId: '',
+  blackOutId: '',
 
   getAllSlides() {
     this.allSlides = pets;
+  },
+
+  setClosePopUpBtnId(closePopUpBtnId) {
+    this.closePopUpBtnId = closePopUpBtnId;
   },
 
   setAmountOfVisibleSlides(newAmount) {
@@ -20,6 +26,10 @@ const slider = {
 
   setPopUpId(popUpId) {
     this.popUpId = popUpId;
+  },
+
+  setBlackoutId(blackOutId) {
+    this.blackOutId = blackOutId;
   },
 
   createNewVisibleSlides() {
@@ -68,6 +78,7 @@ const slider = {
     const leftArrow = document.getElementById(leftArrowId);
     const rightArrow = document.getElementById(rightArowId);
 
+    console.log('!!!!!!!', leftArrow);
     leftArrow.addEventListener('click', () => {
       this.createNewVisibleSlides();
       this.renderVisibleSlides();
@@ -85,30 +96,66 @@ const slider = {
       if ([...target.classList].includes('slider-card__button')) {
         this.popUpSlideEnable(target.dataset);
       }
-      // console.log((target.dataset));
     });
   },
 
   popUpSlideDisable() {
-    alert('popUpDisable');
     const popUpWindow = document.getElementById(this.popUpId);
+    const blackOut = document.getElementById(this.blackOutId);
+
     popUpWindow.classList.add('pop-up-window_hidden');
+    blackOut.classList.add('pop-up-window__blackout_hidden');
+
+    document.removeEventListener('click', ({ target }) => {
+      if (target.id === this.closePopUpBtnId || target.id === this.blackOutId) {
+        this.popUpSlideDisable();
+      }
+    });
   },
 
   popUpSlideEnable(dataset) {
     const popUpWindow = document.getElementById(this.popUpId);
+    const blackOut = document.getElementById(this.blackOutId);
+
     popUpWindow.classList.add('pop-up-window');
     popUpWindow.classList.remove('pop-up-window_hidden');
-    popUpWindow.innerHTML = `
-      hihi
-      </br>
-      ${dataset.name}
-      </br>
-    `;
-    // alert('popUpEnable');
-  },
+    blackOut.classList.remove('pop-up-window__blackout_hidden');
 
-  closePopUp() {},
+    popUpWindow.innerHTML = `
+      <img src="${dataset.img}" alt="image" class="pop-up-window__image"/>
+      <div>
+        <h3>
+          ${dataset.name}
+        </h3>
+        <h4>
+          ${dataset.type} -- ${dataset.breed}
+        </h4>
+        <p class="text">
+          ${dataset.description}
+        </p>
+        <p class="text">
+          <span class="text_bold">Age:</span> ${dataset.age}
+        </p>
+        <p class="text">
+          <span class="text_bold">Inoculations:</span> ${dataset.inoculations}
+        </p>
+        <p class="text">
+          <span class="text_bold">Diseases:</span> ${dataset.diseases}
+        </p>
+        <p class="text">
+          <span class="text_bold">Parasites:</span> ${dataset.parasites}
+        </p>
+      </div>
+
+      <button class="pop-up-window__close" id="${this.closePopUpBtnId}">X</button>
+    `;
+
+    document.body.addEventListener('click', ({ target }) => {
+      if (target.id === this.closePopUpBtnId || target.id === this.blackOutId) {
+        this.popUpSlideDisable();
+      }
+    });
+  },
 };
 
 export default slider;

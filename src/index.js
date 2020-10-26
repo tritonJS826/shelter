@@ -9,5 +9,7 @@ slider.setAmountOfVisibleSlides(3); // add Eventlistener on windowSize
 slider.createNewVisibleSlides();
 slider.renderVisibleSlides('slider__main');
 slider.setPopUpId('slider__pop-up');
+slider.setBlackoutId('pop-up-window__blackout');
+slider.setClosePopUpBtnId('pop-up-window__close');
 slider.launchArrowsListener('slider__arrow_left', 'slider__arrow_right');
 slider.launchPopUpListener('slider__main');

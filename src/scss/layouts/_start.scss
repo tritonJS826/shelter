@@ -21,6 +21,7 @@
 
 .start-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 67px 0 0 0;
@@ -29,6 +30,8 @@
 .start-description {
   display: flex;
   flex-direction: column;
+  min-width: 250px;
+  max-width: 40%;
   justify-content: space-between;
   &__title {
     color: $color2;
@@ -39,14 +42,34 @@
   }
   &__button {
     margin-bottom: 6vw;
+    margin-top: 20px;
+    min-width: 200px;
   }
 }
 
 .start-content__img {
-  background-image: url("/assets/start-screen.png");
+  background-image: url('/assets/start-screen.png');
   background-size: 100%;
   flex-basis: auto;
   min-width: 51vw;
   height: 53.3vw;
   margin: auto 0 0 10px;
+}
+@media (max-width: 769px) {
+  .start-description {
+    min-width: 300px;
+    width: 80%;
+    max-width: 80%;
+    align-items: center;
+    &__button {
+      align-self: center;
+    }
+  }
+  .start-content {
+    text-align: center;
+  }
+  .start-content__img {
+    min-width: 300px;
+    max-height: 310px;
+  }
 }

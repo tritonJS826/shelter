@@ -10,7 +10,6 @@ const isDev = process.env.NODE_ENV === 'development';
 const isProd = process.env.NODE_ENV === !isDev;
 // cool theme bundle-analyze-plugin
 
-
 const optimization = () => {
   const config = {};
 
@@ -28,7 +27,7 @@ const optimization = () => {
 
 module.exports = {
   entry: {
-    main: './src/index.js'
+    main: './src/index.js',
   },
   output: {
     filename: '[name].bundle.[hash].js',
@@ -60,8 +59,8 @@ module.exports = {
       test: /\.scss$/,
       use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
-        use: ['css-loader', 'sass-loader']
-      })
+        use: ['css-loader', 'sass-loader'],
+      }),
     },
     {
       test: /\.(png|svg|jpg|jpeg|gif)$/,

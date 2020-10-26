@@ -26,6 +26,13 @@ h2 {
 
 h3 {
   @extend %font-main;
-  @include font(3.5rem, normal, normal, 130%);
+  @include font(3.5rem, normal, bold, 130%);
+  color: $color-text;
+  text-align: center;
+}
+
+h4 {
+  @extend %font-main;
+  @include font(2rem, normal, bold, 130%);
   color: $color-text;
 }
