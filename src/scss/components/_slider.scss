@@ -2,10 +2,16 @@
   margin-top: 4vw;
 }
 
+.slider__main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .slider-card {
   background: red;
   width: 200px;
   height: 435px;
+  margin: 0 10px;
   &__image {
     background: green;
     width: 200px;
@@ -14,5 +20,31 @@
   &__name {
   }
   &__button {
+    background-color: purple;
+  }
+}
+
+.slider__arrow_left {
+  background: chocolate;
+  width: 20px;
+  height: 20px;
+}
+
+.slider__arrow_right {
+  background: chocolate;
+  width: 20px;
+  height: 20px;
+}
+
+
+@media (max-width: 1280px) {
+  .slider-card:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .slider-card:last-child {
+    display: none;
   }
 }
