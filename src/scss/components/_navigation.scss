@@ -17,6 +17,13 @@
     color: $color3;
     &:hover {
       color: $color2;
+      border-bottom: 2px solid $color-primary;
+    }
+    &_pure {
+      &:hover {
+        border-bottom: none ;
+        color: $color3;
+      }
     }
   }
 }

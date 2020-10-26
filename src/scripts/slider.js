@@ -51,10 +51,10 @@ const slider = {
 
     const stringifySlides = this.visibleSlides.map(
       (slide) => `
-      <div class="slider-card">
-        <img class="slider-card__image" alt="img"></img>
-        <p class="slider-card__name">${slide.name}</p>
-        <div class="slider-card__button"
+      <div class="pet-card">
+        <img src="${slide.img}" class="pet-card__image" alt="img"></img>
+        <p class="pet-card__name">${slide.name}</p>
+        <button class="button pet-card__button"
           data-name="${slide.name}"
           data-img="${slide.img}"
           data-type="${slide.type}"
@@ -65,20 +65,22 @@ const slider = {
           data-diseases="${slide.diseases}"
           data-parasites="${slide.parasites}"
         >
-            подробнее
-        </div>
+            Lear more
+        </button>
       </div>
       `,
     );
 
+    root.style.animation = 'none';
+    root.offsetHeight;
     root.innerHTML = stringifySlides.join(' ');
+    root.style.animation = 'invisibilisation 2s';
   },
 
   launchArrowsListener(leftArrowId, rightArowId) {
     const leftArrow = document.getElementById(leftArrowId);
     const rightArrow = document.getElementById(rightArowId);
 
-    console.log('!!!!!!!', leftArrow);
     leftArrow.addEventListener('click', () => {
       this.createNewVisibleSlides();
       this.renderVisibleSlides();

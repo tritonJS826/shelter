@@ -5,22 +5,20 @@
   flex-direction: column;
   background-color: $color-smoke;
   background-size: 100%;
-  padding: 60px 6vw 0 6vw;
-
+  padding: 160px 6vw 0 6vw;
+  &__hidden {
+    // display:none;
+  }
   &__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    width: 1200px;
-    height: 930px;
   }
-
   &__title {
     text-shadow: 0px 4px 4px $color-text;
     text-align: center;
     margin-bottom: 60px;
   }
-
   &__buttons{
     display: flex;
     flex-direction: row;
@@ -29,22 +27,19 @@
     width: 340px;
     margin-bottom: 100px;
   }
-
   &__buttons button {
     height: 52px;
     width: 52px;
     border-radius: 50px;
     box-shadow: 0px 3px 7px rgba(0, 0, 1, 0.3);
-
     &:nth-child(1) {
       background-color: transparent;
       border: 3px solid $color-primary;
     }
-
     &:nth-child(2) {
       background-color: transparent;
       border: 3px solid $color-primary;
-    } 
+    }
   }
 }
 
@@ -52,27 +47,29 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 10px 50px;
   align-items: center;
   box-shadow: 0px 3px 7px rgba(0, 0, 1, 0.3);
   border-radius: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding-bottom: 30px;
-
   height: 435px;
   width: 270px;
-
+  &:hover {
+    box-shadow: 0px 20px 35px rgba(0, 0, 1, 0.3);
+  }
   &__img {
     height: 270px;
     width: 270px;
   }
-
   &__name {
     color: $color-text;
     font-size: 20px;
   }
-
   &__button {
-    background-color: inherit;
+    padding: 5px;
+    background: inherit;
+    border-radius: 30px;
     border: 3px solid $color-primary;
     width: 197px;
     font-size: 16px;

@@ -16,8 +16,7 @@
   "author": "Viktor Veretennikov",
   "license": "ISC",
   "dependencies": {
-    "normalize.scss": "^0.1.0",
-    "swiper": "^5.3.8"
+    "normalize.scss": "^0.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",

@@ -10,6 +10,7 @@
 @import "base/layout-wrapper";
 @import "base/link";
 @import "base/text";
+@import "base/hidden";
 
 /*Layouts*/
 @import "layouts/wrapper";
@@ -19,6 +20,7 @@
 @import "layouts/help";
 @import "layouts/in-additional";
 @import "layouts/our-friends";
+@import "layouts/pets-list-block";
 
 /*Components*/
 @import "components/navigation";

@@ -7,22 +7,23 @@
 	<title>Project</title>
   </head>
   <body>
+    <header class="header">
+      <div class="logo" id="logo">
+        <h1 class="logo__heading">Cozy House</h1>
+        <p class="logo__subtitle">Shelter for pets in Boston</p>
+      </div>
+      <nav class="navigation-wrapper">
+        <ul class="navigation">
+          <li class="navigation__button" id="main-link"><a class="navigation__link">About the shelter</a></li>
+          <li class="navigation__button" id="our-pets-link"><a class="navigation__link">Our pets</a></li>
+          <li class="navigation__button"><a class="navigation__link navigation__link_pure">Help the shelter</a></li>
+          <li class="navigation__button"><a class="navigation__link navigation__link_pure">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <section class="start">
       <div class="layout-wrapper">
-        <header class="header">
-          <div class="logo">
-              <h1 class="logo__heading">Cozy House</h1>
-              <p class="logo__subtitle">Shelter for pets in Boston</p>
-          </div>
-          <nav class="navigation-wrapper">
-            <ul class="navigation">
-              <li class="navigation__button"><a class="navigation__link">About the shelter</a></li>
-              <li class="navigation__button"><a class="navigation__link">Our pets</a></li>
-              <li class="navigation__button"><a class="navigation__link">Help the shelter</a></li>
-              <li class="navigation__button"><a class="navigation__link">Contacts</a></li>
-            </ul>
-          </nav>
-        </header>
         <div class="start-content">
           <div class="start-description">
             <h2 class="start-description__title">
@@ -31,11 +32,27 @@
             <p class="text start-description__text">
               We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!
             </p>
-            <button class="button start-description__button">
+            <button class="button start-description__button" id="makeAFriend">
               Make a friend
             </button>
           </div>
           <div class="start-content__img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pets hidden">
+      <div class="pets-list-block" id="pets-list-block">
+        <h3 class="pets-list-block__title">Our friends who<br> are looking for a house</h3>
+        <div class="pets-list-block__content" id="pets-list-block__content"></div>
+        <div class="pets-list-block__nav">
+          <div class="pets-list-block__buttons">
+            <button class="button first-page-button">&lsaquo;&lsaquo;</button>
+            <button class="button previous-button">&lsaquo;</button>
+            <button class="button current-button">1</button>
+            <button class="button next-button">&rsaquo;</button>
+            <button class="button last-page-button">&rsaquo;&rsaquo;</button>
           </div>
         </div>
       </div>
@@ -58,11 +75,11 @@
         <div class="pop-up-window__blackout pop-up-window__blackout_hidden" id="pop-up-window__blackout"></div>
         <div class="our-friends__slider" id="our-friends__slider">
           <div class="pop-up-window pop-up-window_hidden" id="slider__pop-up"></div>
-          <div class="slider__arrow_left" id="slider__arrow_left">"left"</div>
+          <div class="slider__arrow_left" id="slider__arrow_left">&larr;</div>
           <div class="slider__main" id="slider__main"></div>
-          <div class="slider__arrow_right" id="slider__arrow_right">"right"</div>
+          <div class="slider__arrow_right" id="slider__arrow_right">&rarr;</div>
         </div>
-        <button class="button our-friends__button">Get to know the rest</button>
+        <button class="button our-friends__button" id="getToKnowTheRest">Get to know the rest</button>
       </div>
     </section>
 
@@ -130,9 +147,33 @@
       </div>
     </section>
 
-    <!-- <footer class="footer">
-
-    </footer> -->
+    <section class="footer">
+  		<div class="layout-wrapper footer-wrapper">
+  			<div class="about-us">
+  				<p class="about-us__title">For questions<br> and suggestions</p>
+  				<div class="about-us__contact">
+  					<img src="/assets/icon-email.png" alt="email">
+  					<a href="mailto:email@shelter.com"><p class="about-us__feedback">email@shelter.com</p></a>
+  				</div>
+  				<div class="about-us__contact">
+  					<img src="/assets/icon-phone.png" alt="phone">
+  					<a href="tel:13 674 567 75 54"><p class="about-us__feedback">+13 674 567 75 54</p></a>
+  				</div>
+  			</div>
+  			<div class="about-us">
+  				<p class="about-us__title">We are waiting<br> for your visit</p>
+  				<div class="about-us__contact">
+  					<img src="/assets/icon-marker.png" alt="location">
+  					<p class="about-us__feedback">1 Central Street, Boston<br> (entrance from the store)</p>
+  				</div>
+  				<div class="about-us__contact">
+  					<img src="/assets/icon-marker.png" alt="location">
+  					<p class="about-us__feedback">18 South Park, London</p>
+  				</div>
+  				</div>
+  			<div class="footer-image"></div>
+  		</div>
+  	</section>
 
 
 	<!-- <script src="index.js"./></script> -->
